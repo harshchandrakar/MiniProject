@@ -6,7 +6,7 @@ echo "2. Subtraction"
 echo "3. Multiplication"
 echo "4. Division"
 
-echo -n "Enter First Number: "
+echo -n "Enter First Number please: "
 read a
 echo -n "Enter Second Number: "
 read b
