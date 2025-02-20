@@ -45,7 +45,7 @@ pipeline {
                                                    usernameVariable: 'SSH_USER')]) {
                     script {
                         // Dynamically create the inventory file
-                        writeFile file: 'hosts', text: """
+                        writeFile file: 'inventory', text: """
                         localhost ansible_user=${SSH_USER} ansible_ssh_private_key_file=${SSH_KEY_FILE}
                         ansible_ssh_common_args='-o StrictHostKeyChecking=no'
                         """
